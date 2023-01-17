@@ -66,14 +66,32 @@ does not have expected type
 ```
 multiply(n : Nat, m : Nat) -> async Nat
 ```
+<h3>Code:<h3>
+<img src="https://i.ibb.co/fCX3TVG/multiple-code.png" alt="multiple-code" border="0">
+  
+<h3>Candid UI</h3>
+<img src="https://i.ibb.co/gynKFKH/Multiple-Candid-UI.png" alt="Multiple-Candid-UI" border="0">
+  
+  
 2. Write a function **volume** that takes a natural number n and returns the volumte of a cube with side length n.
 ```
 volume(n : Nat) -> async Nat
 ```
+<h3>Code:<h3>
+<img src="https://i.ibb.co/6Y8kkR4/volume-code.png" alt="volume-code" border="0">
+  
+<h3>Candid UI</h3>
+<img src="https://i.ibb.co/j3r0hqJ/volume-candid-UI.png" alt="volume-candid-UI" border="0">
+  
 3. Write a function **hours_to_minutes** that takes a number of hours n and returns the number of minutes.
 ```
 hours_to_minutes(n : Nat) -> async Nat
 ```
+<h3>Code:<h3>
+<img src="https://i.ibb.co/KbVzn6y/hours-to-minutes-code.png" alt="hours-to-minutes-code" border="0">
+  
+<h3>Candid UI</h3>
+<img src="https://i.ibb.co/Z1j24md/hours-to-minutes-candid-UI.png" alt="hours-to-minutes-candid-UI" border="0">
 4. Write two functions **set_counter** & **get_counter** .
 
 - set_counter sets the value of counter to n.
@@ -82,12 +100,27 @@ hours_to_minutes(n : Nat) -> async Nat
 set_counter(n : Nat) -> async ()
 get_counter() -> async Nat
 ```
+<h3>Code:<h3>
+<img src="https://i.ibb.co/wWwbY5N/get-set-code.png" alt="get-set-code" border="0">
+  
+<h3>Candid UI</h3>
+<img src="https://i.ibb.co/cx2dPDb/get-set-candid-UI.png" alt="get-set-candid-UI" border="0">
+  
 5. Write a function **test_divide** that takes two natural numbers n and m and returns a boolean indicating if n divides m.
 ```
 test_divide(n: Nat, m : Nat) -> async Bool
 ```
+<h3>Code:<h3>
+<img src="https://i.ibb.co/3FpMsX1/test-divide-code.png" alt="test-divide-code" border="0">
+<h3>Candid UI</h3>
+<img src="https://i.ibb.co/R6frQFg/test-divide-candid-UI.png" alt="test-divide-candid-UI" border="0">
+  
 6. Write a function **is_even** that takes a natural number n and returns a boolean indicating if n is even.
 ```
 is_even(n : Nat) -> async Bool 
 ```
+<h3>Code:<h3>
+<img src="https://i.ibb.co/QC8Y5Z5/is-even-code.png" alt="is-even-code" border="0">
+<h3>Candid UI</h3>
+<img src="https://i.ibb.co/TbpcXd6/is-even-candid-UI.png" alt="is-even-candid-UI" border="0">
 
