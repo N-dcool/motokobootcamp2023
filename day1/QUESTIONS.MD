@@ -58,10 +58,9 @@ does not have expected type
 <img src="https://i.ibb.co/mNxDz9h/Screenshot-2023-01-17-at-10-01-55-PM.png" alt="Screenshot-2023-01-17-at-10-01-55-PM" border="0">
 
 4.  False or True: we can remove the keyword **async** for return argument of a query function since queries are faster to answer.
-<h4>Ans:</h4> 
-   TRUE.
+ TRUE.
 
-<br>
+
 # <a id="coding-challenges"> 🥊 Coding challenges </a>
 1. Write a function **multiply** that takes two natural numbers and returns the product. 
 ```
