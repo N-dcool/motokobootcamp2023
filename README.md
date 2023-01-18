@@ -1,6 +1,12 @@
-# motokobootcamp2023
-<img src="https://pbs.twimg.com/media/FmHudZ9WAAYFpUa?format=jpg&name=large" height="500px" weight="500px" />
-Motoko Bootcamp Challenges Repo
+# motokobootcamp2023 
+<table>
+  <tr>
+  <td ><a href="https://forum.dfinity.org/t/motoko-bootcamp-2023-getting-started-on-the-internet-computer/16846"><img src="https://pbs.twimg.com/media/FmHudZ9WAAYFpUa?format=jpg&name=large" width="300px" height="500px" alt="Myself"/><br /><sub><b>Motoko Bootcamp 2023</b></sub></a><br /></td>
+  <td ><a href="https://github.com/Nareshchoudhary02"><img src="https://i.ibb.co/nR1k4dZ/Myself-with-indian-flag.jpg" width="200px" alt="Myself"/><br /><sub><b>Naresh Choudhary</b></sub></a><br /></td>
+  </tr>
+</table>
+
+<br>Motoko Bootcamp Challenges Repo
 
 # Day 1 🥚
 Welcome to very 1st day into the **Motoko Bootcamp 2023**.
