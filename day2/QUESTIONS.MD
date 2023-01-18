@@ -5,7 +5,22 @@ Welcometo day 2 challenge of the Motoko Bootcamp!
 # Questions 🙋
 
 1. **Who controls the ledger canister?**
-<br>The ledger is controled bt Network Nervous System (NNS).
+Canisters on the Internet Computer can have one or multiple controllers, which are able to update, delete, and modify the state of the canister. There are three main cases to consider:
+
+- A single developer or a group of developers control the canister. In this case, the control over the canister is centralized, and any trust placed in the canister is dependent on the trust in the controllers. This is the default state when a new project is deployed on the Internet Computer.
+
+- The canister is controlled by another canister. With this approach, any type of governance system can be designed. The canister can still be upgraded, but the control over it can be decentralized.
+
+- The canister has no controller. This is the ultimate solution to ensure that a canister will never be upgraded. In this scenario, a canister is similar to a traditional smart contract.
+
+<p align="center"> <img src="https://github.com/motoko-bootcamp/motokobootcamp-2023/blob/main/daily_guides/day_2/img/governance_canister.png" width="400px" style="border: 2px solid black;"> </p>
+
+<p align="center"> Before trusting a canister - make sure that you know who controls it!</p>
+
+Using ```dfx``` we can verify the list of controllers for any canister - with the following command:
+```
+dfx canister --network ic info <CANISTER_ID>
+```
 
 <br>
 
