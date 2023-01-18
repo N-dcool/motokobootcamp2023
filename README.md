@@ -1,7 +1,6 @@
 # Motoko Bootcamp 2023 Challenges Repo
 
 ## Day 1 🥚
-Welcome to very 1st day into the **Motoko Bootcamp 2023**.
 
 - [🥊 Challenges](./day1/challenges.mo)
 - [🙋 Questions](./day1/QUESTIONS.MD)
