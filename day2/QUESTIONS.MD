@@ -102,23 +102,154 @@ import Buffer "mo:base/Buffer"
 ```
 average_array(array : [Int]) -> async Int. 
 ```
+```Motoko
+import Array "mo:base/Array";
+import Nat "mo:base/Nat";
+import Buffer "mo:base/Buffer";
+
+actor {
+ //challenge 1:
+	public func average_array(array: [Int]) : async Int {
+		var sum: Int = 0;
+		for (n in array.vals()) {
+			sum += n;
+		};
+		return sum / array.size();  
+}
+```
+<br>
+
 2. **Character count**: Write a function that takes in a string and a character, and returns the number of occurrences of that character in the string.
 ```
 count_character(t : Text, c : Char) -> async Nat
 ```
+```Motoko
+import Nat "mo:base/Nat";
+
+actor {
+//challenge 2:
+	public func count_character(t : Text, c : Char) : async Nat {
+		var count: Nat = 0;
+		for (char in t.chars()) {
+			if (char == c) {
+				count += 1;
+			};
+		};
+		return count;
+	};
+}
+```
+<br>
+
 3. Write a function **factorial** that takes a natural number n and returns the [factorial](https://www.britannica.com/science/factorial) of n.
 ```
 factorial(n : Nat) ->  async Nat
 ```
+```Motoko
+import Nat "mo:base/Nat";
+
+actor {
+//challenge 3
+	public func factorial(n : Nat) : async Nat {
+		if (n == 0) {
+			return 1;
+		} else {
+			return n * (await factorial(n - 1));
+		};
+	};
+}
+```
+<br>
+
 4.  Write a function **number_of_words** that takes a sentence and returns the number of words in the sentence.
 ```
 number_of_words(t : Text) -> async Nat 
 ```
+```Motoko
+import Nat "mo:base/Nat";
+
+actor {
+// challenge 4:
+	public func number_of_words(t : Text) : async Nat {
+		var count: Nat = 0;
+		if (t.size() > 0) {
+			count += 1;
+		};
+		for (word in t.chars()) {
+			if (word == ' ') {
+				count += 1;
+			};
+		};
+		return count;
+	};
+}
+```
+<br>
+
 5. Write a function **find_duplicates** that takes an array of natural numbers and returns a new array containing all duplicate numbers. The order of the elements in the returned array should be the same as the order of the first occurrence in the input array.
 ```
 find_duplicates(a : [Nat]) -> async [Nat]
 ```
+```Motoko
+import Array "mo:base/Array";
+import Nat "mo:base/Nat";
+import Buffer "mo:base/Buffer";
+
+actor {
+//challenge 5:
+	public func is_on_array(a: [Nat], n: Nat) : async Bool {
+		for (num in a.vals()) {
+			if (num == n) {
+				return true;
+			};
+		};
+		return false;
+	};
+
+	public func is_duplicated(a: [Nat], n: Nat) : async Bool {
+		var count: Nat = 0;
+		for (num in a.vals()) {
+			if (num == n) {
+				count += 1;
+			};
+			if (count > 1) {
+				return true;
+			};
+		};
+		return count > 1;
+	};
+	
+	public func find_duplicates(a: [Nat]) : async [Nat] {
+		var duplicates : [Nat] = [];
+		var seen : [Nat] = [];
+		for (n in a.vals()) {
+			if ((await is_on_array(seen, n)) != false and (await is_duplicated(a, n))) {
+				duplicates := Array.append<Nat>(duplicates, [n]);
+			};
+			seen := Array.append<Nat>(seen, [n]);
+		};
+		return duplicates;
+	};
+}
+```
+<br>
+
 6. Write a function **convert_to_binary** that takes a natural number n and returns a string representing the binary representation of n.
 ```
 convert_to_binary(n : Nat) -> async Text
 ```
+```Motoko
+import Nat "mo:base/Nat";
+
+actor {
+//Challenge 6:
+	public func convert_to_binary(n : Nat) : async Text {
+		if (n == 0) {
+			return "0";
+		} else {
+			return (await convert_to_binary(n / 2)) # Nat.toText(n % 2);
+		};
+	};
+}
+```
+
