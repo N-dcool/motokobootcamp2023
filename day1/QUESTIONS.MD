@@ -3,10 +3,9 @@ Welcome to very 1st day into the **Motoko Bootcamp 2023**.
 
 # <a id="questions"> 🙋 Questions </a>
 1. How much is the current memory capacity of a canister? <br>
-<b>Ans:</b>
-```
-The stable memory of a canister is 8 GB (used to be 4 GB). The Wasm heap is still limited to 4 GB.
-```
+One canister can store up to 48GB of data! Moreover this is a temporary limitation and the memory limitation is frequently uplifted.
+The bump to 32 GiB stable memory is was approved in <a href="https://dashboard.internetcomputer.org/proposal/86279">Proposal 86279</a>
+
 2. What is the issue with the following code sample?<br>
 <b>Ans:</b>
 ```
