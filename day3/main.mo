@@ -1,4 +1,4 @@
-import Book "mo:base/Book";
+import Book "Book";
 import List "mo:base/List";
 
 actor {
