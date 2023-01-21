@@ -2,22 +2,26 @@
 
 ## Day 1 🥚
 
-- [🥊 Challenges](./day1/challenges.mo)
+- [✍🏻 Challenges](./day1/challenges.mo)
 - [🙋 Questions](./day1/QUESTIONS.MD)
 
 ## Day 2 🐣
 
-- [🥊 Challenges](./day2/challenges.mo)
+- [✍🏻 Challenges](./day2/challenges.mo)
 - [🙋 Questions](./day2/QUESTIONS.MD)
-- [🛹 Task](./day2/task/skeleton)
+- [👷🏻‍♂️ Task](./day2/task/skeleton)
 
 ## Day 3.
 
-`// todo`
+- [✍🏻 Challenges](./day3/main.mo)
+- [🙋 Questions](./day3/QUESTIONS.MD)
+- [👷🏻‍♂️ Task](./day3/task/.)
 
 ## Day 4.
 
-`// todo`
+- [✍🏻 Challenges](./day4/challenges.mo)
+- [🙋 Questions](./day4/QUESTIONS.MD)
+- [👷🏻‍♂️ Task](./day4/task/.)
 
 ## Day 5.
 
